@@ -1,0 +1,13 @@
+{
+  "name": "onepassword-autofill-server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local macOS watcher that detects the 1Password browser-extension unlock prompt and types a test string.",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "bindHost": "127.0.0.1",
+  "port": 17381,
+  "pollMs": 1000,
+  "submitRetryMs": 2000,
+  "fillText": "Your 1password password",
+  "startEnabled": true,
+  "dryRun": false,
+  "autoClick": true,
+  "promptText": "1Passwordがブラウザ拡張機能のロックを解除しようとしています。"
+}
