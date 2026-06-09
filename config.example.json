@@ -1,11 +1,32 @@
 {
   "bindHost": "127.0.0.1",
   "port": 17381,
-  "pollMs": 1000,
-  "submitRetryMs": 2000,
+  "pollMs": 200,
+  "deepPollMs": 1000,
+  "osascriptTimeoutMs": 6000,
+  "submitRetryMs": 1200,
+  "verifyDelayMs": 700,
   "fillText": "Your 1password password",
   "startEnabled": true,
   "dryRun": false,
-  "autoClick": true,
-  "promptText": "1Passwordがブラウザ拡張機能のロックを解除しようとしています。"
+  "autoSubmit": true,
+  "promptTexts": [
+    "1Passwordがブラウザ拡張機能のロックを解除しようとしています。",
+    "1Passwordがブラウザ拡張機能のロックを解除しようとしています",
+    "1Passwordはロックを解除しようとしています",
+    "ロックスクリーン — 1Password",
+    "ロックスクリーン",
+    "ブラウザ拡張機能のロックを解除",
+    "ロックを解除しようとしています",
+    "1Password is trying to unlock",
+    "browser extension"
+  ],
+  "promptKeywordGroups": [
+    ["1Password", "ロック", "解除"],
+    ["1Password", "ロックスクリーン"],
+    ["ブラウザ", "拡張", "ロック", "解除"],
+    ["1Password", "unlock"],
+    ["browser", "extension", "unlock"]
+  ],
+  "processNames": ["1Password", "1Password Browser Helper"]
 }
